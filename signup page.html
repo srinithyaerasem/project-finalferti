@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Image Section */
+        .image-section {
+            flex: 1.5;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Form Section */
+        .form-section {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .remember-me input {
+            margin-right: 5px;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Divider */
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .divider span {
+            flex: 1;
+            height: 1px;
+            background-color: #ccc;
+            margin: 0 10px;
+        }
+
+        /* Google Signup */
+        .google-signup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .google-signup img {
+            width: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="https://img.freepik.com/premium-vector/sign-up-page-illustration_1181448-21.jpg" alt="Illustration" />
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h1>Sign Up</h1>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+                <label class="remember-me">
+                    <input type="checkbox"> Remember me
+                </label>
+                <p>Already have an account? <a href="file:///Users/apple/Downloads/login.html">Log in</a></p>
+                <div class="divider">
+                    <span></span> Or <span></span>
+                </div>
+                <button type="button" class="google-signup">
+                    <img src="https://www.google.com/favicon.ico" alt="Google Logo" />
+                    Sign up with Google
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

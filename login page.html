@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Reset and General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e5e5e5;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            width: 80%; /* Adapts to screen size */
+            max-width: 1200px; /* Prevents it from stretching too much */
+            height: 70%; /* Adjust the height */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Illustration Section */
+        .illustration {
+            flex: 1; /* Takes equal space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f4ff;
+            height: 100%;
+        }
+
+        .illustration img {
+            width: 100%;
+            /*max-width: 400px;*/
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Form Section */
+        .form-container {
+            flex: 1; /* Takes equal space */
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-container h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .remember-forgot input {
+            margin-right: 5px;
+        }
+
+        .remember-forgot a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .separator {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .google-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .google-btn img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .signup {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .signup a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+                width: 90%;
+            }
+
+            .illustration {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .form-container {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Illustration Section -->
+        <div class="illustration">
+            <img src="https://global.starthing.com/wp-content/uploads/2023/08/1692760943-undraw_mobile_login_re_9ntv.svg" alt="Illustration">
+        </div>
+        <!-- Form Section -->
+        <div class="form-container">
+            <h2>Login Page</h2>
+            <form>
+                <div class="input-box">
+                    <input type="email" placeholder="Enter Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Enter Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"> Remember Me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Log in</button>
+                <div class="separator">Or</div>
+                <div class="google-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Google-favicon-vector.png?20221007124453" alt="Google Logo">
+                    Sign in with Google
+                </div>
+                <div class="signup">
+                    Don't have an account? <a href="file:///Users/apple/Downloads/signup.html">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
